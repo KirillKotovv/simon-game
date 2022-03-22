@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrapper container">
     <h1 class="main-wrapper__title">Simon Game</h1>
-
+    <router-view/>
   </div>
 </template>
 
@@ -13,8 +13,6 @@ export default {
 
 <style lang="scss" scoped>
 .main-wrapper {
-  padding: 20px;
-
   &__title {
     font-family: Raleway, sans-serif;
     font-size: 48px;
@@ -26,7 +24,7 @@ export default {
 
     color: #000000;
 
-    margin-bottom: 24px;
+    margin: 24px 0;
   }
 }
 </style>

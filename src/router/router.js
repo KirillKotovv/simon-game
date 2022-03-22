@@ -11,6 +11,14 @@ const router = new VueRouter({
             path: '/',
             name:'main',
             component: () => import('@/app/MainWrapper'),
+            redirect:'/game',
+            children:[
+                {
+                    path: '/game',
+                    name:'game',
+                    component: () => import('@/app/game/SimonGame'),
+                }
+            ]
         },
         {
             path: '*',
